@@ -1,4 +1,4 @@
-﻿using Microsoft.AspNetCore.Mvc;
+r﻿using Microsoft.AspNetCore.Mvc;
 
 namespace HNG12StageZero.Controllers
 {
@@ -10,7 +10,7 @@ namespace HNG12StageZero.Controllers
         public IActionResult Get()
         {
             DateTime today = DateTime.UtcNow;
-            var result = {
+            var result = new {
             email = "nbinael@yahoo.com",
             current_datetime = today.ToString("yyyy-MM-ddTHH:mm:ssZ"),
             github_url = "https://github.com/binael/HNG12ProjectZero"
