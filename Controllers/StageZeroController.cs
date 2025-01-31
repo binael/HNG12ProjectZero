@@ -1,4 +1,4 @@
-r﻿using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Mvc;
 
 namespace HNG12StageZero.Controllers
 {
