@@ -16,7 +16,7 @@ namespace HNG12StageZero.Controllers
             github_url = "https://github.com/binael/HNG12ProjectZero"
             };
             
-            return Ok(result)
+            return Ok(result);
         }
     }
 }
