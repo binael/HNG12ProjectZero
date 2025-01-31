@@ -7,11 +7,16 @@ namespace HNG12StageZero.Controllers
     public class StageZeroController : Controller
     {
         [HttpGet]
-        public JsonResult Get()
+        public IActionResult Get()
         {
-            StageZero result = new StageZero();
-
-            return new JsonResult(Ok(result));
+            DateTime today = DateTime.UtcNow;
+            var result = {
+            email = "nbinael@yahoo.com",
+            current_datetime = today.ToString("yyyy-MM-ddTHH:mm:ssZ"),
+            github_url = "https://github.com/binael/HNG12ProjectZero"
+            };
+            
+            return Ok(result)
         }
     }
 }
